@@ -1,13 +1,13 @@
-# Monitoring Stack: Netdata + vnStat + Nginx
+# Monitoring Stack: Netdata +  + Nginx
 
-این مخزن قالبی آماده برای نصب مجموعه‌ی مانیتورینگ **Netdata + vnStat** با **Nginx (reverse-proxy + SSL)** است.
+این مخزن قالبی آماده برای نصب مجموعه‌ی مانیتورینگ **Netdata** با **Nginx (reverse-proxy + SSL)** است.
 هدف: نصب آسان روی Ubuntu/Debian با یک اسکریپت و قابلیت گرفتن پارامترها (دامنه، ایمیل، احراز هویت پایه، و ...).
 
 ## محتویات
 - `install.sh` — اسکریپت اصلی که تمام مراحل نصب را انجام می‌دهد (نیاز به اجرای با sudo).
 - `templates/nginx_netdata.conf.tpl` — قالب پیکربندی Nginx برای پروکسی Netdata.
 - `scripts/setup_htpasswd.sh` — ایجاد فایل htpasswd برای Basic Auth.
-- `scripts/install_netdata_vnstat.sh` — مراحل نصب Netdata و vnStat و فعال‌سازی سرویس‌ها.
+- `scripts/install_netdata.sh` — مراحل نصب Netdata و  و فعال‌سازی سرویس‌ها.
 - `README.md` — همین فایل.
 
 ## پیش‌نیازها
@@ -18,9 +18,9 @@
 ## نحوه استفاده سریع
 1. کلون یا دانلود این مخزن:
    ```bash
-   wget https://github.com/itpiran/Netdata-vnStat-Nginx/archive/main.zip
-   unzip Netdata-vnStat-Nginx-main.zip
-   cd Netdata-vnStat-Nginx-main
+   wget https://github.com/itpiran/Netdata-Nginx/archive/main.zip
+   unzip Netdata-Nginx-main.zip
+   cd Netdata-Nginx-main
    ```
 2. اجرای اسکریپت نصب:
    ```bash
